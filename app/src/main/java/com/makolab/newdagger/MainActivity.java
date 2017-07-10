@@ -16,6 +16,7 @@ import com.makolab.newdagger.dependencies.Presenter1;
 import com.makolab.newdagger.dependencies.UserRepository;
 import com.makolab.newdagger.dependencies.base.UserActivity;
 import com.makolab.newdagger.di.injector.UserInjection;
+import com.makolab.newdagger.ui.fragment.TestFragment;
 
 import javax.inject.Inject;
 
@@ -41,6 +42,11 @@ public class MainActivity extends UserActivity {
 
         String textToShows = String.format("You are logged as %s", repository.getUserName());
         Toast.makeText(this, textToShows, Toast.LENGTH_LONG).show();
+
+        getSupportFragmentManager()
+                .beginTransaction()
+                .add(new TestFragment(), "")
+                .commit();
     }
 
     @Override

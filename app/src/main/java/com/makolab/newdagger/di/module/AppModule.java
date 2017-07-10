@@ -19,7 +19,7 @@ import dagger.Provides;
 //import com.makolab.portal360dealerapp.di.component.sub.SessionActivitySubComponent;
 
 /**
- * Created by Katarzyna  on 2017-05-30.
+ * Created by tomasz.krol  on 2017-05-30.
  */
 @Module(subcomponents = { /*MainActivitySubComponent.class,*/ /*SessionActivitySubComponent.class,*/ /*Camera2ActivitySubComponent.class*/})
 public class AppModule {

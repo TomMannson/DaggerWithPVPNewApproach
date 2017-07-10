@@ -12,18 +12,8 @@ import dagger.android.ContributesAndroidInjector;
  * Created by tomasz.krol on 2017-07-06.
  */
 
-//@Module(subcomponents = MainActivitySubcomponent.class)
-//public abstract class ActivityModule {
-//
-//    @Binds
-//    @IntoMap
-//    @ActivityKey(MainActivity.class)
-//    abstract AndroidInjector.Factory<? extends Activity>
-//    bindMainActivityInjectorFactory(MainActivitySubcomponent.Builder builder);
-//}
-
 @Module
-public interface AplicationBindingModule {
+public interface ApplicationBindingModule {
 
     @ContributesAndroidInjector(modules = { /* modules to install into the subcomponent */ })
     abstract LoginActivity contributeYourActivityInjector();
